@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +12,25 @@ void main() {
   // );
   runApp(const MyApp());
 }
-class MyApp extends StatelessWidget{
+
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  static const hari = 'hari ini, Rabu!';
+  static const hari2 = 'besok, Kamis!';
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello, world!')))
+      home: Scaffold(
+        body: SizedBox.expand(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const [Text(hari, textAlign: TextAlign.center),
+              Text(hari2, textAlign: TextAlign.center),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
