@@ -39,4 +39,8 @@ class Siswa{
   static String namaSekolah = 'SMA Negeri 9 Kota Tangerang';
   String namaSiswa;
   Siswa(this.namaSiswa);
+
+  void perkenalan(){
+    print('Halo, nama saya $namaSiswa. Saya bersekolah di $namaSekolah');
+  }
 }
