@@ -32,5 +32,11 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
+    
   }
+}
+class Siswa{
+  static String namaSekolah = 'SMA Negeri 9 Kota Tangerang';
+  String namaSiswa;
+  Siswa(this.namaSiswa);
 }
