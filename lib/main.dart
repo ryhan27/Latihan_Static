@@ -50,5 +50,10 @@ class Siswa{
     siswa1.perkenalan();
     Siswa siswa2= Siswa("daffa");
     siswa2.perkenalan();
+
+    Siswa.namaSekolah = "SMA Harapan Bangsa";
+    print("Setelah nama sekolah diubah");
+    siswa1.perkenalan();
+    siswa2.perkenalan();
   }
 }
