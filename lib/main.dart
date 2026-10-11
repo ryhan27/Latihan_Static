@@ -43,4 +43,12 @@ class Siswa{
   void perkenalan(){
     print('Halo, nama saya $namaSiswa. Saya bersekolah di $namaSekolah');
   }
+  void main(){
+    print(Siswa.namaSekolah);
+
+    Siswa siswa1= Siswa("Aryan");
+    siswa1.perkenalan();
+    Siswa siswa2= Siswa("daffa");
+    siswa2.perkenalan();
+  }
 }
